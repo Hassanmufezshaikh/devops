@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Setting up the environment variables needed:
-ENV DOMAIN="http://localhost:3000" \
+ENV DOMAIN="http://16.171.224.82:3000/" \
 PORT=3000 \
 STATIC_DIR="./client" \
 PUBLISHABLE_KEY="pk_test_51L5AsSSCC8JVWfvgEtfJkzHMTh7Z5PLY5m1yhR379sJgwAVZEe13NaiG33wsHSyHnPJMjTNOosiPk6AeMI8q0ims0049IKffiu" \
@@ -19,3 +19,8 @@ COPY . .
 EXPOSE 3000
 
 CMD ["node", "server.js"]
+ENV DOMAIN="http://16.171.224.82:3000/" \
+PORT=3000 \
+STATIC_DIR="./client" \
+PUBLISHABLE_KEY="pk_test_51L5AsSSCC8JVWfvgEtfJkzHMTh7Z5PLY5m1yhR379sJgwAVZEe13NaiG33wsHSyHnPJMjTNOosiPk6AeMI8q0ims0049IKffiu" \
+SECRET_KEY="sk_test_51L5AsSSCC8JVWfvgxpyZvQyBRRkHmGBkdyIa94vPD3Zs71qbHGrnSPlrJOIWiR74fbcn1A85yESCFnrrp3aX0Oz900JaunHrhe"
